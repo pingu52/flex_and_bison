@@ -1,6 +1,6 @@
-fb1-3:	fb1-3.l fb1-3.c
-		flex -o fb1-3.c fb1-3.l
-		gcc -o fb1-3 fb1-3.c -ll
+simple_flex_scan:	simple_flex_scan.l simple_flex_scan.c
+					flex -o simple_flex_scan.c simple_flex_scan.l
+					gcc -o simple_flex_scan simple_flex_scan.c -ll
 
 clean:	
-		rm fb1-3 fb1-3.c
+					rm simple_flex_scan simple_flex_scan.c

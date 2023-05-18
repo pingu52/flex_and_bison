@@ -1,8 +1,8 @@
-fb1-2:	fb1-2.l fb1-2.c
-		flex -o fb1-2.c fb1-2.l
-		gcc -o fb1-2 fb1-2.c -ll
+british_to_en:	british_to_en.l british_to_en.c
+				flex -o british_to_en.c british_to_en.l
+				gcc -o british_to_en british_to_en.c -ll
 
 clean:	
-		rm fb1-2.c fb1-2
+				rm british_to_en.c british_to_en
 
 
