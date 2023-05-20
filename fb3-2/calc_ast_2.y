@@ -53,7 +53,7 @@ list: /* nothing */ { $$ = NULL; }
 
 calclist: /* nothing */
         | calclist stmt EOL {
-            printf("= %4.4f\n> ", eval($2));
+            printf("= %4.4g\n> ", eval($2));
             treefree($2);
             }
         | calclist LET NAME '(' symlist ')' '=' list EOL {
